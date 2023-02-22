@@ -5,13 +5,20 @@ import Error from './components/Error';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import './App.css';
 import About from './Nav-components/About';
-
+import Contact from './components/Contact';
+import RestaurentMenu from './components/RestaurentMenu';
+// import { lazy } from 'react';
+//
+// loading in dynamic way 
+//
+// const Instamart = lazy(() => import("./components/Instamart"))
+//upon on demand loading --> upon render -->suspend loading
 
 function App() {
   return (
     <>
     <Header/>
-    <Body />
+    <Outlet />
     <Footer />
     </>
   );
@@ -22,14 +29,26 @@ export const appRouter = createBrowserRouter([
     path: "/",
     element: <App/>,
     errorElement:<Error/>,
-  },
-  {
-    path:"/about",
-    element:<About/>,
-  },
-  {
-    path:"/Error",
-    element:<Error/>,
+    children : [            
+      // all children nested insight the outlet
+      {
+        path:"/",
+        element:<Body/>,
+      },
+      {
+        path:"/about",
+        element:<About/>,
+      },
+      {
+        path:"/contact",
+        element:<Contact/>,
+      },
+      {
+        path:"/restaurent/:id",
+        element:<RestaurentMenu/>,
+      },
+
+    ]
   },
  
 ])

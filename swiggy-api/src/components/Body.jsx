@@ -2,7 +2,7 @@
 import RestaurantCard from "./RestaurantCard"
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer"
-
+import useOnline from "../utils/useOnline";
 
 export default function Body() {
   const [allRestaurent, setAllRestaurent] = useState([])
@@ -23,6 +23,7 @@ export default function Body() {
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
+
   const filterData = (searchInput, restaurants) => {
     const filterData = restaurants.filter((restaurant) =>
     restaurant?.data?.name?.toLowerCase()?.includes(searchInput?.toLowerCase())
@@ -30,6 +31,14 @@ export default function Body() {
     setSearchInput("");
     return filterData;
   };
+
+  //creating custom hook and call it 
+const isOnline = useOnline();
+if(!isOnline) {
+  return <h1> Offline, please check your internet connection</h1>
+}
+
+
   // not render component (early render)
       if (!allRestaurent) return null
 

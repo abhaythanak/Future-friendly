@@ -913,3 +913,15 @@ return (
 const Footer = () => {
 return <h1>Footer</h1>;
 };
+
+{
+chunking
+code spliting
+dynamic bundling
+lazy loading
+on demand loading
+dynamic import
+--------------------------------------------
+const Instamart = lazy(() => import("./components/Instamart"))
+
+}

@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
+import useOnline from "../utils/useOnline"
 import Title from "./Title"
 //Api call to check (logIn/out  user) authentication
 // const loggedInUser =() =>{
@@ -10,17 +12,22 @@ import Title from "./Title"
 export default function Header() {
 const [isLoggedIn, setIsLoggedIn]= useState(false)
 
+const isOnline = useOnline()
+
     return(
         <>
         <div className="header">
             {Title()}
             <div className="nav-items">
                 <ul className="ul-list">
-                    <li className="li">About</li>
-                    <li  className="li">ContactUs</li>
-                    <li className="li">Cart</li>
+                <li className="li"><Link to="/">Home</Link></li>
+                    <li className="li"><Link to="/about">About</Link></li>
+                    <li  className="li"><Link to="/contact">ContactUs</Link></li>
+                    <li className="li"><Link to="/cart">Cart</Link></li>
                 </ul>
             </div>
+            {/* isOnline showing u online or offline */}
+            <h1>{isOnline? 'online' : 'offline' }</h1>
             {isLoggedIn ? (
             <button onClick={()=> setIsLoggedIn(false)}>Logout</button>
             ) : (
