@@ -42,3 +42,6 @@
   background: rgb(168, 179, 192);
   margin: 20px;
 }
+.menu{
+  display: flex;
+}

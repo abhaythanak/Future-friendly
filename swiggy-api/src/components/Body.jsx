@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard"
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer"
 import useOnline from "../utils/useOnline";
+import { Link } from "react-router-dom";
 
 export default function Body() {
   const [allRestaurent, setAllRestaurent] = useState([])
@@ -66,12 +67,15 @@ if(!isOnline) {
         <div className="restaurant-list">
            {filteredRestaurants.map ((restaurant) => {
             return (
-              <RestaurantCard {...restaurant.data} key={restaurant.data.id}
+              <Link to={`/restaurent/${restaurant.data.id}` } key={restaurant.data.id} >
+               <RestaurantCard {...restaurant.data} />  {/*remove from restaurentCard and add it link tag key={restaurant.data.id} */}
+              </Link>
+              // <RestaurantCard {...restaurant.data} key={restaurant.data.id}
               // name={restaurant.data.name}
               // link={restaurant.data.cloudinaryImageId}
               // cuisines={restaurant.data.cuisines}
               // price={restaurant.data.costForTwoString}
-              />
+              // />
             )
            })}
         </div>
