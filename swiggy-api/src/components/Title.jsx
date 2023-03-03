@@ -3,7 +3,7 @@ export default function Title() {
         <a
         href="logo"
         className="logo">
-            <h1>FoodCraving</h1>
+            <h1 className="flex m-">FoodCraving</h1>
         </a>
     )
 };

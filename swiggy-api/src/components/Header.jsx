@@ -1,7 +1,5 @@
 import { useState } from "react"
-import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import store from "../utils/store"
 import useOnline from "../utils/useOnline"
 import Title from "./Title"
 //Api call to check (logIn/out  user) authentication
@@ -16,8 +14,6 @@ const [isLoggedIn, setIsLoggedIn]= useState(false)
 
 const isOnline = useOnline()
 
-const cartItems = useSelector(Store => store.cart.items)
-
     return(
         <>
         <div className="header">
@@ -27,7 +23,6 @@ const cartItems = useSelector(Store => store.cart.items)
                 <li className="li"><Link to="/">Home</Link></li>
                     <li className="li"><Link to="/about">About</Link></li>
                     <li  className="li"><Link to="/contact">ContactUs</Link></li>
-                    <li className="li"><Link to="/cart">Cart -{cartItems.length}</Link></li>
                 </ul>
             </div>
             {/* isOnline showing u online or offline */}

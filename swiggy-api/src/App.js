@@ -7,9 +7,6 @@ import './App.css';
 import About from './Nav-components/About';
 import Contact from './components/Contact';
 import RestaurentMenu from './components/RestaurentMenu';
-import { Provider } from 'react-redux';
-import store from './utils/store';
-import Cart from './components/Cart';
 // import { lazy } from 'react';
 //
 // loading in dynamic way 
@@ -20,11 +17,11 @@ import Cart from './components/Cart';
 function App() {
   return (
     
-    <Provider store={store}>
+    <>
     <Header/>
     <Outlet />
     <Footer />
-    </Provider>
+    </>
     
 
   );
@@ -53,11 +50,6 @@ export const appRouter = createBrowserRouter([
         path:"/restaurent/:id",
         element:<RestaurentMenu/>,
       },
-      {
-        path:"/cart",
-        element:<Cart/>,
-      },
-
     ]
   },
  

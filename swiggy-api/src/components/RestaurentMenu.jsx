@@ -1,8 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import Shimmer from "./Shimmer"
-import { addItem } from "../utils/CartSlice";
-import { useDispatch } from "react-redux";
 
 export default function RestaurentMenu() {
 
@@ -21,12 +20,7 @@ export default function RestaurentMenu() {
       const json = await data.json();
       setRestaurant(json.data);
     }
-  
-const dispatch = useDispatch();
 
-const addFoodItem = (item) => {
-  dispatch(addItem(item))
-}
 
     return !restaurant ? (
       <Shimmer />
@@ -46,7 +40,7 @@ const addFoodItem = (item) => {
           <ul>
             {Object.values(restaurant?.menu?.items).map((item) => (
               <li key={item?.id}> {item?.name} -{""}
-              <button className="" onClick={() => addFoodItem(item)}>ADD</button>
+              
               </li>
             ))}
           </ul>
