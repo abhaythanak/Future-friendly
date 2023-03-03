@@ -1,10 +1,13 @@
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="bg-cyan-900">
-      <h1 className='text-6xl '>Tailwind is here</h1>
+    <>
+    <div className=' p-5'>
+    <NavBar/>
     </div>
+    </>
   );
 }
 
