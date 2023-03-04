@@ -1,4 +1,5 @@
 import './App.css';
+import Home from './components/Home';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
     <div className=' p-5'>
     <NavBar/>
+    <Home/>
     </div>
     </>
   );
