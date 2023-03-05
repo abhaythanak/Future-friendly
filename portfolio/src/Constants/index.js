@@ -6,8 +6,8 @@ import { aflacLogo, android, angular, cognizantLogo,
 export const AppText={
     hello:'Hello,',
     Iam:'I am ',
-    RahulSanap:'Rahul Sanap',
-    aboutMeDescripion:'I am software developer working in IT industry from  last 6 Years as Full stack developer. Expert in UI/UX design, Front-end  and Back-end Development',
+    RahulSanap:'Abhay Thanak',
+    aboutMeDescripion:'I am Front-end developer',
     Skills:'Skills & ',
     Experties:'Experties',
     UIUXDesigner:'UI/UX Designer',
@@ -19,7 +19,7 @@ export const AppText={
     WorkedFor:'Worked For',
     Contact:'Contact ',
     Us:'Us',
-    copywriteText:'Copyright by Rahul Sanap @2023'
+    copywriteText:'Copyright by Abhay Thanak @2023'
 
 }
 
