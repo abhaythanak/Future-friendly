@@ -13,10 +13,10 @@ const Home = () => {
             <h1 className='text-[35px] md:text-[40px] font-bold '>{AppText.hello}</h1>
             <div className='flex'>
             <h1 className='text-[35px]  md:text-[40px] font-bold mr-3'>{AppText.Iam}</h1>
-            {/* <h1 className='text-[40px]  md:text-[60px] font-bold  text-purple-600'>{AppText.RahulSanap}</h1> */}
+            {/* <h1 className='text-[40px]  md:text-[60px] font-bold  text-purple-600'>{AppText.abhaythanak}</h1> */}
             <Typewriter
   options={{
-    strings: [AppText.RahulSanap, AppText.FrontedDeveloper,AppText.UIUXDesigner,AppText.BackendDeveloper],
+    strings: [AppText.abhaythanak, AppText.FrontedDeveloper],
     autoStart: true,
     loop: true,
     
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         </div>
         <div className=' w-full flex justify-center'>
-          <img src={homeImage}  className="w-[200px] md:w-[300px]"/>
+          <img src={homeImage}  className="w-[200px] md:w-[300px]" alt='homeImg'/>
         </div>
     </div>
   )
