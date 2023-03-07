@@ -24,7 +24,7 @@ const Home = () => {
 />
 </div>
 <div>
-  <h1 className='my-5 text-gray-400'>I am Rahul Sanap and I worked as Developer and currently I am a Software Architecture</h1>
+  <h1 className='my-5 text-gray-400'>I am Abhay Thanak and I worked as Developer and currently I am a Software Architecture</h1>
 </div>
             <button class="hover:z-50 transition-all duration-300 ease-in-out  hover:scale-125 bg-purple-600 p-2 rounded-md text-white">Resume</button>
         </div>

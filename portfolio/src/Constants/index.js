@@ -1,7 +1,7 @@
 import { aflacLogo, android, angular, cognizantLogo,
      facebook, firebase, instagram, ionic, linkdin, mysql,
       nodejs,
-      react, typescript, wellsLogo, wiuLogo, youtube } from "../assets"
+      react, typescript, wellsLogo, wiuLogo, youtube, html ,css , js , bootstrap ,tailwind } from "../assets"
 
 export const AppText={
     hello:'Hello,',
@@ -45,7 +45,27 @@ export const aboutSection=[
 export const skillsList=[
     {
         id:1,
-        icon:angular
+        icon:react
+    },
+    {
+        id:1,
+        icon:js
+    },
+    {
+        id:1,
+        icon:tailwind
+    },
+    {
+        id:1,
+        icon:bootstrap
+    },
+    {
+        id:1,
+        icon:html
+    },
+    {
+        id:1,
+        icon:css
     },
     {
         id:1,
@@ -53,43 +73,23 @@ export const skillsList=[
     },
     {
         id:1,
-        icon:typescript
+        icon:js
     },
     {
         id:1,
-        icon:firebase
+        icon:bootstrap
     },
     {
         id:1,
-        icon:android
+        icon:tailwind
     },
     {
         id:1,
-        icon:ionic
+        icon:html
     },
     {
         id:1,
-        icon:mysql
-    },
-    {
-        id:1,
-        icon:react
-    },
-    {
-        id:1,
-        icon:typescript
-    },
-    {
-        id:1,
-        icon:firebase
-    },
-    {
-        id:1,
-        icon:android
-    },
-    {
-        id:1,
-        icon:nodejs
+        icon:css
     },
 
 ]

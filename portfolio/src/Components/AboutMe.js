@@ -5,14 +5,14 @@ import { book, laptop, wave } from './../assets'
 import { aboutSection, AppText } from '../Constants'
 const AboutMe = () => {
   return (
-    <div id="aboutme" className='mt-[100px]'>
-          <img src={wave}  className="w-screen absolute " alt='wave'/>
-        <div className='w-full bg-purple-600 h-[300px]  justify-center items-center'>
+    <div id="aboutme" className='mt-[100px] bg-gray-800 rounded-lg'>
+          {/* <img src={wave}  className="w-screen absolute " alt='wave'/> */}
+        <div className='w-full bg-purple-600 h-[300px] rounded-lg  justify-center items-center'>
         <div className='flex flex-row justify-between absolute'>
             <img src={laptop}  className="w-[150px] md:w-[300px] mt-[-100px] " alt='laptop' />
         </div>
-            <h1 className='text-white text-[50px] pt-[20px] font-bold text-center'>About <span className='text-black'>Me</span></h1>
-            <h1 className='w-full px-10 md:px-48 lg:px-80 mt-[50px] text-white'>{AppText.aboutMeDescripion} </h1>
+            <h1 className='text-red-900  text-[50px] pt-[20px] font-bold text-center'>About <span className='text-black'>Me</span></h1>
+            {/* <h1 className='w-full px-10 md:px-48 lg:px-80 mt-[50px] text-white'>{AppText.aboutMeDescripion} </h1> */}
         </div>
         <div className='flex flex-col md:flex-row mt-[-75px] md:px-32 '>
            {

@@ -26,6 +26,11 @@ import youtube from './youtube.png'
 import instagram from './Instagram.png'
 import facebook from './Facebook.png'
 import linkdin from './LinkedIn.png'
+import bootstrap from './bootstrap.png'
+import html from './html.png'
+import js from './js.png'
+import css from './css.png'
+import tailwind from './tailwind.png'
 
 
 
@@ -50,6 +55,11 @@ export {
     mysql,
     react,
     wave,
-    robo
+    robo,
+    bootstrap,
+    html,
+    js,
+    css,
+    tailwind
 
 }
