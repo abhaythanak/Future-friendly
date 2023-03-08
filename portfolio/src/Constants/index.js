@@ -179,11 +179,7 @@ export const socialNetwork=[
         logo:instagram,
         url:'https://www.instagram.com/tubeguruji/'
     },
-    {
-        id:1,
-        logo:youtube,
-        url:'https://www.youtube.com/channel/UC33Tc4FCgd_to314_b2hNTg',
-    },
+   
     {
         id:1,
         logo:linkdin,

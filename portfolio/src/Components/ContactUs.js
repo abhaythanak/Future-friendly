@@ -5,13 +5,13 @@ import SectionHeading from '../Shared/SectionHeading'
 
 function ContactUs() {
   return (
-    <div id="contact" className='flex flex-col justify-center mt-5'>
-        <div className='flex flex-row  justify-center '>
+    <div id="contact" className='flex flex-col justify-center mt-5 '>
+        <div className='flex flex-row  justify-center  transition ease-in-out delay-100 hover:scale-150'>
         <SectionHeading firstTitle={AppText.Contact} secondTitle={AppText.Us}/>
-        <img src={phone} className="w-[80px] ml-4" alt='phone'/>
+        <img src={phone} className="w-[80px] ml-4 " alt='phone'/>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 justify-evenly px-10 md:px-44'>
-            <img src={contactusbg} className="w-[300px] mr-10" alt='contact'/>
+            <img src={contactusbg} className="w-[300px] mr-10 " alt='contact'/>
            <div className='w-full'>
            <div className='flex flex-col '>
             <label className='text-gray-400 '>Email</label>

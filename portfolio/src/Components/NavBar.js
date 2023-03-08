@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { logo } from "./../assets";
+import { logo, } from "./../assets"; 
 import "./NavBar.css";
+
+//#252839 color use in background
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="w-full p-[10px] flex justify-between items-center">
-      <img src={logo} className="h-[20px]" alt="logo" />
+      <img src="https://logos.textgiraffe.com/logos/logo-name/Abhay-designstyle-kiddo-u.png" className="h-[90px]" alt="logo" />
+      {/* <h1 className="text-2xl font-extrabold text-rose-800"><span></span> ABHAY<span></span></h1> */}
       <div>
         <ul className="hidden md:flex">
           <li className="menuItem hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">

@@ -6,15 +6,15 @@ import { AppText, skillsList, workDetail } from './../Constants'
 
 const Skills = () => {
   return (
-    <div className='mt-10' id="skills">
-        <div className='flex flex-row justify-center items-center'>
+    <div className='mt-10 mb-20' id="skills">
+        <div className='flex flex-row justify-center items-center transition ease-in-out delay-100 hover:scale-150'>
         <img src={skill} className="w-[70px] hover:animate-bounce " alt='skill'/>
-        <h1 className='text-[40px]  font-bold'>{AppText.Skills}<span className='text-purple-600'>{AppText.Experties}</span></h1>
+        <h1 className='text-[40px]  font-bold'>{AppText.Skills}<span className='text-white'>{AppText.Experties}</span></h1>
         </div>
         <div className='flex flex-col md:flex-row  justify-evenly px-8 md:px-0 mt-8 '>
-          <div className='grid grid-cols-4 md:grid-cols-4 gap-8  items-center'>
+          <div className='grid grid-cols-4 md:grid-cols-4 gap-8 lg:place-self-stretch  items-center'>
             {skillsList.map((item, index)=>(
-                <div className='w-[60px] transition ease-in-out delay-100 hover:scale-150 bg-purple-100
+                <div className='w-[60px] transition ease-in-out delay-100 hover:scale-150 bg-slate-800
                  p-3 rounded-full' >
                     <img src={item.icon} 
                     className="w-16" alt='icon'/>
