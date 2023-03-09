@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import './../assets'
 import { skill } from './../assets'
@@ -14,10 +15,10 @@ const Skills = () => {
         <div className='flex flex-col md:flex-row  justify-evenly px-8 md:px-0 mt-8 '>
           <div className='grid grid-cols-4 md:grid-cols-4 gap-8 lg:place-self-stretch  items-center'>
             {skillsList.map((item, index)=>(
-                <div className='w-[60px] transition ease-in-out delay-100 hover:scale-150 bg-slate-800
+                <div className='lg:mx-20 w-[60px] transition ease-in-out delay-100 hover:scale-150 bg-slate-800
                  p-3 rounded-full' >
                     <img src={item.icon} 
-                    className="w-16" alt='icon'/>
+                    className="w-16 " alt='icon'/>
                 </div>
                
             ))}

@@ -3,7 +3,7 @@ import { AppText, socialNetwork } from '../Constants'
 
 const Footer = () => {
   return (
-    <div className='bg-purple-800 rounded-lg  mt-10 p-20 items-center flex flex-col  px-10 md:px-80'>
+    <div className='bg-black rounded-lg  mt-10 p-20 items-center flex flex-col  px-10 md:px-80'>
      <div className='flex gap-5'>
         {socialNetwork.map((item,index)=>(
             <div>
