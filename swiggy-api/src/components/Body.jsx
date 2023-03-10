@@ -46,25 +46,29 @@ if(!isOnline) {
 
     return filteredRestaurants.length === 0 ? (<Shimmer/>): (
       <>
-      <div className="search-container">
+      <div className="container p-5  bg-gray-800 my-5 flex lg:justify-center align-middle ">
+       <div className="w-full flex lg:justify-center align-middle">
         <input
           type="text"
+          className=" p-2 text-white rounded-bl-xl lg:w-5/12  bg-black border-none "
           placeholder="Search"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <button
+        <button  className="p-2 bg-white w-10 text-white font-bold rounded-tr-xl"
           onClick={() => {
             const data = filterData(searchInput, allRestaurent)
 
             setFilteredRestaurants(data)
           }}
         >
-          Search
+         🔎
         </button>
+        </div>
         {/* <h1> {searchInput} </h1> */}
       </div>
-        <div className="restaurant-list">
+      <div className="flex items-center justify-center min-h-screen container mx-auto">
+        <div className=" flex flex-wrap justify-center gap-6 ">
            {filteredRestaurants.map ((restaurant) => {
             return (
               <Link to={`/restaurent/${restaurant.data.id}` } key={restaurant.data.id} >
@@ -78,6 +82,7 @@ if(!isOnline) {
               // />
             )
            })}
+        </div>
         </div>
       </>
     )

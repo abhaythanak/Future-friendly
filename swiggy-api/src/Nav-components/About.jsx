@@ -11,3 +11,22 @@ export default function About() {
         </div>
     );    
 };
+
+
+/**
+ *
+ * Parent Constructor
+ * Parent render
+ *    First Child constructor
+ *    First Child render
+ *    Second Child constructor
+ *    Second Child render
+ *
+ *    DOM UPDATED for children
+ *
+ *    first Child componentDidMount
+ *    Second Child componentDid
+ *  Parent componentDidMount
+ *
+ *
+ */

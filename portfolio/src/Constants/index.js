@@ -17,7 +17,7 @@ export const AppText={
     WorkedFor:'Worked For',
     Contact:'Contact ',
     Us:'Us',
-    copywriteText:'Copyright by Abhay Thanak @2023'
+    copywriteText:'No©Copyright by Abhay Thanak @2023'
 
 }
 

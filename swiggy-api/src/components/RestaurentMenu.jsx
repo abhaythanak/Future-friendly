@@ -25,7 +25,7 @@ export default function RestaurentMenu() {
     return !restaurant ? (
       <Shimmer />
     ) : (
-      <div className="menu">
+      <div className="flex">
         <div>
           <h1>Name :- {restaurant?.name}</h1>
           <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + restaurant?.cloudinaryImageId} alt="" />
@@ -35,7 +35,7 @@ export default function RestaurentMenu() {
           <h2> {restaurant?.costForTwoMsg} </h2>
         </div>
         
-        <div>
+        <div className="p-5">
           <h1>Menu</h1>
           <ul>
             {Object.values(restaurant?.menu?.items).map((item) => (
