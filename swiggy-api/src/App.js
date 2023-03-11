@@ -7,6 +7,8 @@ import './App.css';
 import About from './Nav-components/About';
 import Contact from './components/Contact';
 import RestaurentMenu from './components/RestaurentMenu';
+import LogIn from './RegisterPage/LogIn';
+import Logout from './RegisterPage/Logout';
 // import { lazy } from 'react';
 //
 // loading in dynamic way 
@@ -49,6 +51,14 @@ export const appRouter = createBrowserRouter([
       {
         path:"/restaurent/:id",
         element:<RestaurentMenu/>,
+      },
+      {
+        path:"/login",
+        element:<LogIn/>,
+      },
+      {
+        path:"/logout",
+        element:<Logout/>,
       },
     ]
   },

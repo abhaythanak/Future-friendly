@@ -8,8 +8,8 @@ export default function RestaurantCard({
     return (
         <>
         
-        <div className="w-56 h-full p-2 m-2 shadow-lg bg-pink-50 transition-all ease-in-out group hover:scale-110">
-        <img className="rounded transition-all ease-in-out group hover:scale-105 "
+        <div className="w-56 h-full p-2 m-2 shadow-lg bg-black text-slate-100 transition-all ease-in-out group hover:scale-105 rounded-2xl">
+        <img className="rounded-2xl transition-all ease-in-out group hover:scale-105 "
         src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + `${cloudinaryImageId}`  }
          alt="img" />
             {/* {console.log(props)} */}

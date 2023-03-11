@@ -46,7 +46,7 @@ if(!isOnline) {
 
     return filteredRestaurants.length === 0 ? (<Shimmer/>): (
       <>
-      <div className="container p-5  bg-gray-800 my-5 flex lg:justify-center align-middle ">
+      <div className="container p-5  bg-gray-800 my-5 flex lg:justify-center align-middle h-full">
        <div className="w-full flex lg:justify-center align-middle">
         <input
           type="text"
@@ -67,7 +67,7 @@ if(!isOnline) {
         </div>
         {/* <h1> {searchInput} </h1> */}
       </div>
-      <div className="flex items-center justify-center min-h-screen container mx-auto">
+      <div className="flex items-center justify-center min-h-screen container mx-auto bg-gray-800 ">
         <div className=" flex flex-wrap justify-center gap-6 ">
            {filteredRestaurants.map ((restaurant) => {
             return (
