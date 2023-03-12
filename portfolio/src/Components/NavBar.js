@@ -7,7 +7,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="w-full p-[10px] flex justify-between items-center">
-      <img src="https://logos.textgiraffe.com/logos/logo-name/Abhay-designstyle-kiddo-u.png" className="h-[90px]" alt="logo" />
+      <img src="https://www.linkpicture.com/q/avtlogo1.png" className="h-24 rounded-full" alt="logo" />
       {/* <h1 className="text-2xl font-extrabold text-rose-800"><span></span> ABHAY<span></span></h1> */}
       <div>
         <ul className="hidden md:flex">

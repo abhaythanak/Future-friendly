@@ -7,9 +7,9 @@ import { AppText, skillsList, workDetail } from './../Constants'
 
 const Skills = () => {
   return (
-    <div className='mt-10 mb-20' id="skills">
-        <div className='flex flex-row justify-center items-center transition ease-in-out delay-100 hover:scale-150'>
-        <img src={skill} className="w-[70px] hover:animate-bounce " alt='skill'/>
+    <div className='mt-16 mb-20' id="skills">
+        <div className='flex flex-row justify-center items-center transition ease-in-out delay-100 hover:scale-150 mb-12'>
+        <img src={skill} className="w-[70px] hover:animate-pulse " alt='skill'/>
         <h1 className='text-[40px]  font-bold'>{AppText.Skills}<span className='text-white'>{AppText.Experties}</span></h1>
         </div>
         <div className='flex flex-col md:flex-row  justify-evenly px-8 md:px-0 mt-8 '>

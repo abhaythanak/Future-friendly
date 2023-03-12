@@ -95,30 +95,20 @@ export const skillsList=[
 ]
 
 export const workDetail=[
+    
     { 
         id:1,
-        year:'2021',
-        compnayName:'Wells Fargo',
-        position:'Lead Software Developer'
+        year:'2021 - 2022',
+        compnayName:'WNS GLOBAL SERVICE',
+        position:'Associate(Operations - Canada & USA Export LTL). Process for transportation of logistics.'
     },
     { 
         id:1,
-        year:'2020',
-        compnayName:'Empowered Benefits',
-        position:'Full Stack Developer'
+        year:'2019',
+        compnayName:'M.D.Industries',
+        position:'CNC Machine Programmer & Operator'
     },
-    { 
-        id:1,
-        year:'2018',
-        compnayName:'Western Illionois University',
-        position:'Full Stack Developer'
-    },
-    { 
-        id:1,
-        year:'2016',
-        compnayName:'Cognizant',
-        position:'Programmer Analyst'
-    },
+  
 ]
 
 export const portfolio=[

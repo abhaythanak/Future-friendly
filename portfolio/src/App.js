@@ -10,7 +10,7 @@ import Skills from './Components/Skills';
 
 function App() {
   return (
-    <div className="bg-slate-700">
+    <div className="bg-slate-800">
       {/* NavBar */}
       <NavBar/>
       {/* Home */}
