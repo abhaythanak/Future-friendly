@@ -29,16 +29,13 @@ const AboutMe = () => {
             ))
             } */}
 
-            <div className='max-w-5xl lg:ml-64  w-full grid sm:grid-cols-2 lg:gap-8  px-4 '>
-              <div className='sm:text-right text-4xl font-bold mb-32 '>
+            <div className='max-w-5xl lg:ml-64  w-full grid sm:grid-cols-2 lg:gap-8   px-4 '>
+              <div className='sm:text-right text-4xl font-bold mb-16 '>
                 <p>This is the new journey. Please take a look around</p>
               </div>
               <div>
-                <p>I am passionate about building excellent software that improves
-                  the lives of those around me. I specialize in creating software
-                  for clients ranging from individuals and small-businesses all the
-                  way to large enterprise corporations. what would you do if you had
-                  a software expert available at your fingertips?
+                <p>I have a friendly personality and enjoy interacting with others. I am genuine, and people can see that I am authentic and honest.
+                   I am a hard worker and am always putting in the extra effort to achieve my goals. I am innovative and always looking for new ways to improve current systems or processes.
                 </p>
               </div>
             </div>
