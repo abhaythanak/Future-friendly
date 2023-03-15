@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function NavBar() {
     const [toggle, setToggle] = useState(false);
+    const amount = useSelector(state => state.amount)
     return (
       <div className="w-full p-[10px] flex justify-between items-center">
         <img src="https://www.linkpicture.com/q/avtlogo1.png" className="h-24 rounded-full" alt="logo" />
         {/* <h1 className="text-2xl font-extrabold text-rose-800"><span></span> ABHAY<span></span></h1> */}
-        <h2 className="bg-red-900 rounded-xl text-white"><button className="w-36 h-14">1000rs</button></h2>
+        <h2 className="bg-red-900 rounded-xl text-white"><button className="w-36 h-14">Balance {amount}</button></h2>
         <div>
           <ul className="hidden md:flex">
             <li className="menuItem hover:scale-110 hover:z-50 transition-all duration-300 ease-in-out">

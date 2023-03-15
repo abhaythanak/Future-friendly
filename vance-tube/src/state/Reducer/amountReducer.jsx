@@ -1,6 +1,6 @@
 
 
-export default function Reducer(state=0, action) {
+const Reducer = (state=0, action)=> {
     if (action.type === 'deposit'){
         return state + action.payload
     }
@@ -11,3 +11,5 @@ export default function Reducer(state=0, action) {
         return state;
     }
 };
+
+export default Reducer
