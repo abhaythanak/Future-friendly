@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+div{
+  
+display: grid;
+justify-content: center;
+margin: 20px;
+  
+}
+input{
+  margin: 20px;
+  width: 100%
+}
