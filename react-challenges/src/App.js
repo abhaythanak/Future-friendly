@@ -6,6 +6,7 @@ import { useState } from 'react';
 // import States from './components/States';
 import IfElse from './components/IfElse';
 import EventHand from './components/EventHand';
+import Api from './components/Api';
 
 function App() {
 // const [name, setName] = useState("Nishant")
@@ -23,7 +24,8 @@ function App() {
     {/* <ClassComponents/> */}
     {/* <Props valueProps={name} changeName={changeName}/> */}
     {/* <IfElse/> */}
-    <EventHand/>
+    {/* <EventHand/> */}
+    <Api/>
     </div>
   );
 }
