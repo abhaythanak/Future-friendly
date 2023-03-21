@@ -31,7 +31,51 @@ useEffect(()=>{
     },[])
 })
 
-const updateData
+//update
+const updateData = (id)=>{
+    console.log(id)
+    axios.put(`https://6416c87e47092b8b61346dce.mockapi.io/users/${id}`,{
+        name: name,
+        age: 26,
+        hobbies:["game, flute, traviling, coding"]
+    },id)
+    .then((res)=>{
+        console.log(res.data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+}
+
+// delete
+
+const deleteData = (id)=>{
+    console.log(id)
+    axios.delete(`https://6416c87e47092b8b61346dce.mockapi.io/users/${id}`)
+    .then((res)=>{
+        getData();
+        console.log(res.data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+}
+
+const getData =()=>{
+    axios
+    .get("https://6416c87e47092b8b61346dce.mockapi.io/users")
+    .then((res)=> {
+     setUsers(res.data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+}
+
+    useEffect(()=>{
+        getData()
+    },[])
+
 
     return(
         <>
@@ -41,9 +85,9 @@ const updateData
         {users.map((user)=>{
             return(
                 <>
-                <h1>{user.name}</h1>
-                <button>update</button>
-                <button>delete</button>
+                <h1>{`${user.id}. ${user.name}`}</h1>
+                <button onClick={()=> updateData(user.id)}>update</button>
+                <button onClick={()=> deleteData(user.id)}>delete</button>
                 </>
             )
         })}
