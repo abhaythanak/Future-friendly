@@ -2,6 +2,7 @@
 
 import './App.css';
 import React, { Suspense, useState } from 'react';
+import App1 from './ReactTesting/App1';
 // import ClassComponents from './components/ClassComponents';
 // import Props from './components/Props';
 // import Map from "./components/Map"
@@ -17,8 +18,8 @@ import React, { Suspense, useState } from 'react';
 
 // Lazy Loading 
 // import Home1 from './lazyLoading/Home1';
-import Loader from './lazyLoading/Loader';
-const Home1 = React.lazy(()=> import("./lazyLoading/Home1"))
+// import Loader from './lazyLoading/Loader';
+// const Home1 = React.lazy(()=> import("./lazyLoading/Home1"))
 
 
 
@@ -37,23 +38,15 @@ function App() {
     
     <div className='app'> 
     {/* Lazy loading to improve loading time */}
-    <div>
+    {/* <div>
       <Suspense fallback={<Loader />}>
       <Home1/>
       <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      <Home1/>
-      
       </Suspense>
-    </div>
+    </div> */}
 
-
+    {/* react--testing */}
+      <App1/>
 
     {/* context hook to passs props */}
     {/* <UserData.Provider value={{name, setName}}>
