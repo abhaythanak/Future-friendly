@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
 
 import './App.css';
-import React, { Suspense, useState } from 'react';
-import App1 from './ReactTesting/App1';
+// import React, { Suspense, useState } from 'react';
+// import App1 from './ReactTesting/App1';
+import NavBar from './ReduxComponent/NavBar';
 // import ClassComponents from './components/ClassComponents';
 // import Props from './components/Props';
 // import Map from "./components/Map"
@@ -46,7 +47,7 @@ function App() {
     </div> */}
 
     {/* react--testing */}
-      <App1/>
+      {/* <App1/> */}
 
     {/* context hook to passs props */}
     {/* <UserData.Provider value={{name, setName}}>
@@ -64,6 +65,9 @@ function App() {
     {/* <EventHand/> */}
     {/* <Api/> */}
     {/* <Debouncing/> */}
+
+    {/* REDUX TOOLKIT */}
+    <NavBar/>
     
     </div>
   );
