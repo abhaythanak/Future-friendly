@@ -27,7 +27,7 @@ const Home = () => {
   <h1 className='my-5 text-gray-400'>I am Abhay Thanak Exploring the Programming World.</h1>
 </div>
             <button class="rounded-2xl">
-            <a href="Abhay-Thanak (2).docx" download="Abhay-Thanak (2).docx" class="relative px-6 py-3 font-bold text-white rounded-lg group">
+            <a href="Abhay-Thanak (2).pdf" download="Abhay-Thanak (2).pdf" class="relative px-6 py-3 font-bold text-white rounded-lg group">
 <span class="absolute inset-0 w-full h-full transition duration-300 transform -translate-x-1 -translate-y-1 bg-purple-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0"></span>
 <span class="absolute inset-0 w-full h-full transition duration-300 transform translate-x-1 translate-y-1 bg-pink-800 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-screen"></span>
 <span class="relative">RESUME</span>

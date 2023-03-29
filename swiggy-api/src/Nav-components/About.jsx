@@ -1,4 +1,3 @@
-import Profile from "../classVSfunction/profile";
 
 export default function About() {
     return (
