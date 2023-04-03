@@ -1,8 +1,35 @@
 import { useDispatch } from "react-redux"
 import { toggleMenu } from "../utils/appSlice";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { YOUTUBE_SEARCH_API } from "../utils/Constants"
 
 export default function Head() {
+// search bar functioning
+    const [searchQuery, setSearchQuery] = useState("")
+  //  console.log(searchQuery)
+    const [suggestions, setSuggestions] = useState([])
+
+    useEffect(()=>{
+//API CALL FOR SEARCH
+//make an api call every key press
+// but if the diffrence between 2api call in less than 200ms
+//decline the api call
+    const Timer = setTimeout(() => getSearchSuggestions(), 200 )  
+    
+    return () => {
+        clearTimeout(Timer);
+    }
+
+    },[searchQuery])
+
+    const getSearchSuggestions = async () => {
+        const data = await fetch (YOUTUBE_SEARCH_API + searchQuery)
+        const json = await data.json();
+        // console.log(json)
+        setSuggestions(json[1])
+    }
+
     const dispatch = useDispatch();
     const toggleMenuHandler = () =>{
         dispatch(toggleMenu());
@@ -19,14 +46,28 @@ export default function Head() {
         src="https://lh3.googleusercontent.com/tLxjykvp6rP7gj-A7OOmwJu5_sOXxcQYHTDrHAzupIQNLqD5v76XjXST-XblSRaJHARjYFz6PCs-4j-Mj22lG0jsRnYVeZk9kC54Dnc" alt="vance-tube Logo" />
         
         </div>
+        <div>
         <div className="col-span-10 px-10 ">
             <input
-            className="w-1/2 p-2  bg-slate-200 rounded-l-full text-center"
-            type="text" />
+            className="w-4/5 p-2  bg-slate-200 rounded-l-full text-center"
+            type="text"
+            value={searchQuery}
+            onChange={(e)=> setSearchQuery(e.target.value)}
+            />
+            
             <button
-            className="rounded-r-full w-1/6 bg-slate-500 p-2 font-bold text-center "
+            className="rounded-r-full w-20 bg-slate-500 p-2 font-bold text-center "
             >Search</button>
         </div>
+        <div className=" fixed rounded-lg content-center border-gray-200 w-2/6 bg-white ml-14 mt-1">
+            <ul className="text-center m-1">
+                {suggestions.map((s)=> (
+                    <li key={s} className="rounded-lg  py-2 shadow hover:bg-gray-200">{s}</li>
+                ))}
+            
+            </ul>
+        </div>
+        </div> 
         <div className="">
             <img 
             className="h-8"
