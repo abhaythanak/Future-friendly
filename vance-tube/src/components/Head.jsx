@@ -1,21 +1,34 @@
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { toggleMenu } from "../utils/appSlice";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { YOUTUBE_SEARCH_API } from "../utils/Constants"
+import { cacheResults } from "../utils/searchSlice";
 
 export default function Head() {
 // search bar functioning
     const [searchQuery, setSearchQuery] = useState("")
   //  console.log(searchQuery)
     const [suggestions, setSuggestions] = useState([])
+    const [showSuggestions , setShowSuggestions] = useState(false)
 
-    useEffect(()=>{
 //API CALL FOR SEARCH
 //make an api call every key press
 // but if the diffrence between 2api call in less than 200ms
 //decline the api call
-    const Timer = setTimeout(() => getSearchSuggestions(), 200 )  
+
+const searchCache = useSelector((store)=>store.search)
+const dispatch = useDispatch()
+    useEffect(()=>{
+
+    const Timer = setTimeout(() =>{
+        if(searchCache[searchQuery]) {
+            setSuggestions(searchCache[searchQuery])
+        } else {
+            getSearchSuggestions()
+        }
+
+     } , 200 )  
     
     return () => {
         clearTimeout(Timer);
@@ -24,13 +37,20 @@ export default function Head() {
     },[searchQuery])
 
     const getSearchSuggestions = async () => {
+        console.log("API call-"+ searchQuery)
         const data = await fetch (YOUTUBE_SEARCH_API + searchQuery)
         const json = await data.json();
         // console.log(json)
         setSuggestions(json[1])
+
+        //update cache
+        dispatch(cacheResults({
+            [searchQuery]:json[1]
+        }));
+
     }
 
-    const dispatch = useDispatch();
+    
     const toggleMenuHandler = () =>{
         dispatch(toggleMenu());
     }
@@ -53,12 +73,15 @@ export default function Head() {
             type="text"
             value={searchQuery}
             onChange={(e)=> setSearchQuery(e.target.value)}
+            onFocus={()=> setShowSuggestions(true)}
+            onBlur={()=> setShowSuggestions(false)}
             />
             
             <button
             className="rounded-r-full w-20 bg-slate-500 p-2 font-bold text-center "
             >Search</button>
         </div>
+        {showSuggestions && (
         <div className=" fixed rounded-lg content-center border-gray-200 w-2/6 bg-white ml-14 mt-1">
             <ul className="text-center m-1">
                 {suggestions.map((s)=> (
@@ -67,6 +90,7 @@ export default function Head() {
             
             </ul>
         </div>
+        )}
         </div> 
         <div className="">
             <img 
