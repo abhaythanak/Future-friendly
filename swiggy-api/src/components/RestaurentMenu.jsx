@@ -16,7 +16,7 @@ export default function RestaurentMenu() {
   
     async function getRestaurantInfo() {
       const data = await fetch(
-        `https://www.swiggy.com/dapi/menu/v4/full?lat=22.4707019&lng=70.05773&menuId=${id}`
+        `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=${id}`
       );
       const json = await data.json();
       setRestaurant(json.data);
