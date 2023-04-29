@@ -26,7 +26,8 @@ export default function Body() {
     setAllRestaurent(json?.data?.cards[2]?.data?.data?.cards);
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
-  console.log(allRestaurent)
+  //console.log(allRestaurent)
+  // console.log(typeof(getRestaurants()))
 
 
   const filterData = (searchInput, restaurants) => {
@@ -36,6 +37,7 @@ export default function Body() {
     setSearchInput("");
     return filterData;
   };
+  
 
   //creating custom hook and call it 
 const isOnline = useOnline();
