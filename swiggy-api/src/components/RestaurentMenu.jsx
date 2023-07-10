@@ -20,7 +20,7 @@ export default function RestaurentMenu() {
       );
       const json = await data.json();
       setRestaurant(json.data);
-      console.log(typeof(json.data))
+     // console.log(typeof(json.data))
     }
 
     // const addFoodItem = (item) => {
