@@ -13,6 +13,9 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import firebase from "./tech/firebase.png";
+import angular from "./tech/angular.png";
+import angularmaterial from "./tech/angularmaterial.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -26,37 +29,56 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import controlytics from "./company/controlytics.jpeg";
+import raymond from "./company/raymond.jpg";
+import vigyanAshram from "./company/vigyanAshram.jpg";
+import galvanize from "./company/galvanize.png";
+
+import cura from "./cura.png";
+import flair from "./flair.png";
+import doormate from "./doormate.png";
+
+import webshop from "./webshop.png";
+import dragdrop from "./dragdrop.png";
+import fit from "./fit.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+	logo,
+	backend,
+	creator,
+	mobile,
+	web,
+	github,
+	menu,
+	close,
+	css,
+	docker,
+	figma,
+	git,
+	html,
+	javascript,
+	angular,
+	angularmaterial,
+	mongodb,
+	nodejs,
+	reactjs,
+	redux,
+	tailwind,
+	typescript,
+	threejs,
+	meta,
+	shopify,
+	starbucks,
+	tesla,
+	controlytics,
+	raymond,
+	vigyanAshram,
+	galvanize,
+	firebase,
+	cura,
+	flair,
+	doormate,
+	webshop,
+	fit,
+	dragdrop,
 };
