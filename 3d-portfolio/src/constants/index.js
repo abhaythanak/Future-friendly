@@ -24,6 +24,7 @@ import {
 	raymond,
 	vigyanAshram,
 	galvanize,
+	swiggy,netflix,bitcoin,mdlogo,wns,bootstrap,
 } from "../assets";
 
 export const navLinks = [
@@ -47,16 +48,16 @@ const services = [
 		icon: web,
 	},
 	{
-		title: "Ionic App Developer",
+		title: "Responsive Design",
 		icon: mobile,
-	},
-	{
-		title: "Prototype Designer",
-		icon: backend,
 	},
 	{
 		title: "Problem Solver",
 		icon: creator,
+	},
+	{
+		title: "Continuous Learning",
+		icon: backend,
 	},
 ];
 
@@ -73,16 +74,20 @@ const technologies = [
 		name: "JavaScript",
 		icon: javascript,
 	},
-	{
-		name: "TypeScript",
-		icon: typescript,
-	},
-	{
-		name: "Angular",
-		icon: angular,
-	},
+	// {
+	// 	name: "TypeScript",
+	// 	icon: typescript,
+	// },
+	// {
+	// 	name: "Angular",
+	// 	icon: angular,
+	// },
 	{
 		name: "React JS",
+		icon: reactjs,
+	},
+	{
+		name: "Next JS",
 		icon: reactjs,
 	},
 	{
@@ -90,9 +95,13 @@ const technologies = [
 		icon: firebase,
 	},
 	{
-		name: "Angular Material",
-		icon: angularmaterial,
+		name: "Bootstrap",
+		icon: bootstrap,
 	},
+	// {
+	// 	name: "Angular Material",
+	// 	icon: angularmaterial,
+	// },
 	{
 		name: "Tailwind CSS",
 		icon: tailwind,
@@ -109,57 +118,59 @@ const technologies = [
 
 const experiences = [
 	{
-		title: "Angular Developer",
-		company_name: "Galvanize",
-		icon: galvanize,
+		title: "Associate Operations",
+		company_name: "WNS GLobal Services",
+		icon: wns,
 		iconBg: "#383E56",
-		date: "Feb 2022 - March 2023",
+		date: "Feb 2021 - May 2022",
 		points: [
 			"Developing and maintaining web applications for Internal Dashboard using Angular and TypeScript technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
+			"Monitoring system functions and performance for maintaining quality standards",
+			"Real-time decision making for efficient and optimized use of containers and logistics equipments ",
+			"Recommend and active participation in business flow improvements and clearly communicate problem/resolution process to project manager",
 		],
 		website: "https://galvanizetestprep.com/",
 	},
 	{
-		title: "Web Developer Intern",
-		company_name: "Controlytics.AI",
-		icon: controlytics,
+		title: "Associate Operations",
+		company_name: "MD Industries",
+		icon: mdlogo,
 		iconBg: "#E6DEDD",
-		date: "July 2021 - Dec 2021",
+		date: "May 2019 - Feb 2020",
 		points: [
-			"Worked on customizing Open-source ThingsBoard platform for collection, analysis and visualization of incoming Telemetry data.",
-			"Developed and deployed custom widgets for the platform using Angular and TypeScript.",
-			"Implemented Attendance Management System, Shift Hours and Violation Tracking features for the platform.",
+			"Program development for machine programming based on requirements",
+			"Designing and Production of highly intricate and complex mechanical parts using CNC machine",
+			"Supervision of machine settings and programs for maintaining consistent quality",
+			"Documentation and Logs of daily output and processes",
 		],
 		website: "https://controlytics.ai/",
 	},
-	{
-		title: "Research Fellow, DIC",
-		company_name: "Vigyan Ashram",
-		icon: vigyanAshram,
-		iconBg: "#383E56",
-		date: "July 2019 - Dec 2019",
-		points: [
-			"Designed and developed an indoor system for the Black Soldier Flies (BSF) using Arduino for controlled Temperature and Humidity conditions (Project- Vegetable Waste Decomposition using BSF).",
-			"Derived psychometric properties of air and developed a mathematical model for the system for improved efficiency i.e 80% (earlier 45%).",
-			"Extended the implementation of Fan-Pad Evaporative Cooling System for Poly-house cooling (Project- Advanced Farming).",
-		],
-		website: "http://vigyanashram.com/",
-	},
-	{
-		title: "Graduate Engineer Trainee",
-		company_name: "Raymond Ltd.",
-		icon: raymond,
-		iconBg: "#E6DEDD",
-		date: "July 2018 - May 2019",
-		points: [
-			"Supervision and work allotment of 60 personnel for the production of Design Samples.",
-			"Real time decision making and management of process and resources for desired output.",
-			"Collaborated with cross-functional teams including designers, product managers, and workers to create high-quality products.",
-		],
-		website: "https://www.raymond.in/",
-	},
+	// {
+	// 	title: "Research Fellow, DIC",
+	// 	company_name: "Vigyan Ashram",
+	// 	icon: vigyanAshram,
+	// 	iconBg: "#383E56",
+	// 	date: "July 2019 - Dec 2019",
+	// 	points: [
+	// 		"Designed and developed an indoor system for the Black Soldier Flies (BSF) using Arduino for controlled Temperature and Humidity conditions (Project- Vegetable Waste Decomposition using BSF).",
+	// 		"Derived psychometric properties of air and developed a mathematical model for the system for improved efficiency i.e 80% (earlier 45%).",
+	// 		"Extended the implementation of Fan-Pad Evaporative Cooling System for Poly-house cooling (Project- Advanced Farming).",
+	// 	],
+	// 	website: "http://vigyanashram.com/",
+	// },
+	// {
+	// 	title: "Graduate Engineer Trainee",
+	// 	company_name: "Raymond Ltd.",
+	// 	icon: raymond,
+	// 	iconBg: "#E6DEDD",
+	// 	date: "July 2018 - May 2019",
+	// 	points: [
+	// 		"Supervision and work allotment of 60 personnel for the production of Design Samples.",
+	// 		"Real time decision making and management of process and resources for desired output.",
+	// 		"Collaborated with cross-functional teams including designers, product managers, and workers to create high-quality products.",
+	// 	],
+	// 	website: "https://www.raymond.in/",
+	// },
 ];
 
 const testimonials = [
@@ -230,16 +241,16 @@ const testimonials = [
 
 const projects = [
 	{
-		name: "WorkFit App",
+		name: "Netflix App",
 		description:
-			"An Angular fitness app that allows users to train, and view previous trainings. The app uses Firebase and Angularfire to add real-time database functionalities and see the updates almost before we make them!.",
+			"",
 		tags: [
 			{
-				name: "angular",
+				name: "React",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "angular-material",
+				name: "Styled Components",
 				color: "green-text-gradient",
 			},
 			{
@@ -247,16 +258,16 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: fit,
-		source_code_link: "https://github.com/s4sachin/work-fit-app",
+		image: netflix,
+		source_code_link: "https://github.com/abhaythanak/execution-code/tree/main/Netflix",
 	},
 	{
-		name: "Web Shop",
+		name: "Trade Coin",
 		description:
-			"Web application that enables users to search for products, add them to cart, and place order. Used Angular material and TailwindCSS to structure and design the UI and Stripe for payment integration",
+			"A platform for real-time viewing and comparison of multiple digital currencies.The platform has past 5 years data for in-depth analysis and decision making. Also there’s an option for multiple time frames selection along with user friendly Light & Dark Mode.",
 		tags: [
 			{
-				name: "angular",
+				name: "React",
 				color: "blue-text-gradient",
 			},
 			{
@@ -264,33 +275,33 @@ const projects = [
 				color: "green-text-gradient",
 			},
 			{
-				name: "stripe",
+				name: "ChakraUI",
 				color: "pink-text-gradient",
 			},
 		],
-		image: webshop,
-		source_code_link: "https://github.com/s4sachin/webshop",
+		image: bitcoin,
+		source_code_link: "https://github.com/abhaythanak/ReactProject/tree/main/crypto-app",
 	},
 	{
-		name: "Drag & Drop",
+		name: "Food Craving",
 		description:
-			"A functional Drag and Drop component which can be extended to any application built entirely using TypeScript. Implemented Inference, Type Transformation, Generics and advanced functionalities of TS.",
+			" An ecom platform for ordering food online built using React library with config driven config UI. Getting real time data from Swiggy API.Implemented Search functionality for searching and browsing through catalog.",
 		tags: [
 			{
-				name: "ts",
+				name: "React",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "html",
+				name: "TailwindCss",
 				color: "green-text-gradient",
 			},
 			{
-				name: "css",
+				name: "SwiggyAPI",
 				color: "pink-text-gradient",
 			},
 		],
-		image: dragdrop,
-		source_code_link: "https://github.com/s4sachin/drag-and-drop-TS",
+		image: swiggy,
+		source_code_link: "https://github.com/abhaythanak/Future-friendly/tree/main/swiggy-api",
 	},
 ];
 

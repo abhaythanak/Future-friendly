@@ -23,11 +23,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import bootstrap from "./tech/Bootstrap_logo.svg.png";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import mdlogo from "./company/mdlogo.png"
+import wns from "./company/wns.png"
 
 import controlytics from "./company/controlytics.jpeg";
 import raymond from "./company/raymond.jpg";
@@ -41,6 +45,9 @@ import doormate from "./doormate.png";
 import webshop from "./webshop.png";
 import dragdrop from "./dragdrop.png";
 import fit from "./fit.png";
+import bitcoin from "./bitcoin.jpeg";
+import netflix from "./Netflix.png";
+import swiggy from "./swiggy.jpeg";
 
 export {
 	logo,
@@ -81,4 +88,5 @@ export {
 	webshop,
 	fit,
 	dragdrop,
+	swiggy,netflix,bitcoin,mdlogo,wns,bootstrap,
 };
