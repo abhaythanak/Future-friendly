@@ -1,10 +1,7 @@
-
-
-
 export default function Shimmer() {
     return (
         <>
-        <div className="flex flex-wrap justify-center gap-6 bg-gray-800 text-slate-100">
+        <div className="flex flex-wrap justify-center gap-6 bg-gray-700 text-slate-100">
             {Array(30)
             .fill('')
             .map((e,index) => (

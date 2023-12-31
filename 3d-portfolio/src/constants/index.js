@@ -243,7 +243,7 @@ const projects = [
 	{
 		name: "Netflix App",
 		description:
-			"",
+			"Single page app built using React.using React's built-in hooks like useEffect,useState and useContext to create a dynamic and responsive app. using React Styled components, ensuring a smooth and visually stunning user experience.",
 		tags: [
 			{
 				name: "React",
@@ -285,7 +285,7 @@ const projects = [
 	{
 		name: "Food Craving",
 		description:
-			" An ecom platform for ordering food online built using React library with config driven config UI. Getting real time data from Swiggy API.Implemented Search functionality for searching and browsing through catalog.",
+			" An ecom platform for ordering food online built using React library with config driven config UI. Getting real time data from Swiggy API.Implemented Search functionality for searching and browsing through catalog.I have build shimmer UI component.",
 		tags: [
 			{
 				name: "React",
