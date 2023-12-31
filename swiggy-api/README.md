@@ -1,3 +1,6 @@
+
+![Screenshot (46)](https://github.com/abhaythanak/Future-friendly/assets/107474114/d9bfccc1-7deb-4ea5-a9c0-068421cf7367)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
