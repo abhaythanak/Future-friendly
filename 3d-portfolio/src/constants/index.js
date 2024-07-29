@@ -118,6 +118,20 @@ const technologies = [
 
 const experiences = [
 	{
+		title: "React Developer ",
+		company_name: "Zeplinix PVT LTD, Pune",
+		icon: "",
+		iconBg: "#383E56",
+		date: "January 2024 - (Present)",
+		points: [
+			"Developed and maintained websites for Sweven Info, Zeplinix, and 301io.",
+			"Utilized technologies such as React, Tailwind CSS, HTML, and Swiper JS to create responsive and visually appealing web applications.",
+			"Gained proficiency in Angular for specific projects and leveraged various UI libraries, including Acernity UI, Swiper JS, and GSAP.",
+			"",
+		],
+		website: "https://galvanizetestprep.com/",
+	},
+	{
 		title: "Associate Operations",
 		company_name: "WNS GLobal Services",
 		icon: wns,
