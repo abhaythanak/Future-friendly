@@ -120,9 +120,9 @@ const experiences = [
 	{
 		title: "React Developer ",
 		company_name: "Zeplinix PVT LTD, Pune",
-		icon: "",
+		icon: "https://media.licdn.com/dms/image/D4D0BAQEM55O-Kk0AkQ/company-logo_100_100/0/1706773673131?e=1730937600&v=beta&t=WXFA8YnXyB4HLsSA_-55vJxTeJPzjR39IdsTbj3Lgrw",
 		iconBg: "#383E56",
-		date: "January 2024 - (Present)",
+		date: "January 2024 - July 2024",
 		points: [
 			"Developed and maintained websites for Sweven Info, Zeplinix, and 301io.",
 			"Utilized technologies such as React, Tailwind CSS, HTML, and Swiper JS to create responsive and visually appealing web applications.",
@@ -274,6 +274,7 @@ const projects = [
 		],
 		image: netflix,
 		source_code_link: "https://github.com/abhaythanak/execution-code/tree/main/Netflix",
+		deploy:"https://flix-mingle.netlify.app",
 	},
 	{
 		name: "Trade Coin",
@@ -295,6 +296,7 @@ const projects = [
 		],
 		image: bitcoin,
 		source_code_link: "https://github.com/abhaythanak/ReactProject/tree/main/crypto-app",
+		deploy:"https://bitcoinstudy.netlify.app",
 	},
 	{
 		name: "Food Craving",
@@ -316,6 +318,7 @@ const projects = [
 		],
 		image: swiggy,
 		source_code_link: "https://github.com/abhaythanak/Future-friendly/tree/main/swiggy-api",
+		deploy:"https://swiggyfoodapi.netlify.app",
 	},
 ];
 
