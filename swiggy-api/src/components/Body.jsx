@@ -22,7 +22,7 @@ export default function Body() {
     const data = await fetch(API);
     const json = await data.json();
     //console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants[0].info.name)
-    console.log(json?.data?.cards[1]?.card.card.gridElements.infoWithStyle.restaurants)
+    //console.log(json?.data?.cards[1]?.card.card.gridElements.infoWithStyle.restaurants)
     setAllRestaurent(json?.data?.cards[1]?.card.card.gridElements.infoWithStyle.restaurants);
     setFilteredRestaurants(json?.data?.cards[1]?.card.card.gridElements.infoWithStyle.restaurants);
   };
@@ -51,16 +51,16 @@ if(!isOnline) {
 
     return filteredRestaurants.length === 0 ? (<Shimmer/>): (
       <>
-      <div className="container p-5  bg-gray-800 my-5 flex lg:justify-center align-middle h-full">
-       <div className="w-full flex lg:justify-center align-middle">
+      <div className="flex lg:justify-center bg-gray-800 my-5 p-5 h-full align-middle container">
+       <div className="flex lg:justify-center w-full align-middle">
         <input
           type="text"
-          className=" p-2 text-white rounded-bl-xl lg:w-5/12  bg-black border-none "
+          className="bg-black p-2 border-none rounded-bl-xl lg:w-5/12 text-white"
           placeholder="Search"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <button  className="p-2 bg-white w-10 text-white font-bold rounded-tr-xl"
+        <button  className="bg-white p-2 rounded-tr-xl w-10 font-bold text-white"
           onClick={() => {
             const data = filterData(searchInput, allRestaurent)
 
@@ -72,8 +72,8 @@ if(!isOnline) {
         </div>
         {/* <h1> {searchInput} </h1> */}
       </div>
-      <div className="flex items-center justify-center min-h-screen container mx-auto bg-gray-800 ">
-        <div className=" flex flex-wrap justify-center gap-6 ">
+      <div className="flex justify-center items-center bg-gray-800 mx-auto min-h-screen container">
+        <div className="flex flex-wrap justify-center gap-6">
            {filteredRestaurants.map ((restaurant) => {
             return (
               <Link to={`/restaurent/${restaurant.info.id}` } key={restaurant.info.id} >
